@@ -78,10 +78,13 @@
     font-family: Arial, Helvetica, sans-serif;  
 }
 section{
-    margin: 40px 0 0 0;
+    margin: 25px 0 0 0;
 }
 section p{
     margin: 15px;
+}
+section h2{
+    margin: 60px 0 0 0;
 }
 .section-apresentacao p{
 justify-content: center;
@@ -89,5 +92,24 @@ width: 500px;
 margin: auto;
 margin-top: 15px;
 
+}
+.imagem img{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    margin:auto;
+    padding: 30px;
+}
+.tabela{
+text-align: center;
+margin: auto;
 
+}
+.tabela th{
+background-color:#bb86fc ;
+color:white ;
+}
+.tabela td{
+background-color:#424250 ;
+color:white ;
 }
