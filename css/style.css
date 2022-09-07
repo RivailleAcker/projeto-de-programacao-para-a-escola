@@ -1,4 +1,4 @@
-.cabecalho {
+ .cabecalho {
     display: flex;
     justify-content: space-between;
     background-color: rgba(170, 2, 248, 0.89);
@@ -45,16 +45,16 @@
     margin: 0 0 0 25px;
 
 }
-/* --Main--*/
+
 .main{
     
     margin: 20px 40px 0 40px;
     align-items: center;
-    text-align: center;
+    text-align: center; 
     /* background-color: rgb(240, 245, 245); */
-}
+ } 
 
-.apresentacao{
+ .apresentacao{
  display: flex;
 }
 .apresentacao img{
@@ -110,4 +110,4 @@ color:white ;
 .tabela td{
 background-color:#424250 ;
 color:white ;
-}
+} 
