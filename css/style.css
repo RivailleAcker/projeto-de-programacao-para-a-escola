@@ -1,113 +1,206 @@
  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(170, 2, 248, 0.89);
-    height: 100px;
-    max-height: 100%;
+     display: flex;
+     justify-content: space-between;
+     background-color: rgba(170, 2, 248, 0.89);
+     height: 100px;
+     max-height: 100%;
+     margin: 0;
+     align-items: center;
+     background-image: url(../images/background-da-tabela.jpg);
+     background-size: cover;
+ }
+
+ .logo {
+     display: flex;
+     align-content: flex-start;
+     flex-wrap: wrap;
+
+ }
+
+ .logo img {
+     width: 74px;
+     height: 74px;
+ }
+
+ .logo h2 {
+     margin: 18px 0 0 0;
+     font-size: 20px;
+     font-family: 'Courier New', monospace;
+ }
+
+
+ .menu a {
+     font-size: 30px;
+
+
+ }
+
+ .menu ul {
+     display: flex;
+     flex-wrap: wrap;
+     align-content: flex-start;
+     margin: 0 15px 0 0;
+     align-items: center;
+ }
+
+ .menu li {
+     margin: 0 0 0 25px;
+
+ }
+
+ .main {
+
+     margin: 20px 0 0 0;
+     align-items: center;
+     text-align: center;
+     /* background-color: rgb(240, 245, 245); */
+ }
+
+ .apresentacao {
+     display: flex;
+ }
+
+ .apresentacao img {
+     width: 250px;
+     height: 250px;
+
+ }
+
+ .ficha {
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+
+ }
+
+ .ficha p {
+     margin: 0 0 15px 15px;
+     font-style: italic;
+     color: rgb(126, 126, 138);
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ section{
+     margin: 25px 40px 0 40px;
+ }
+
+ section p {
+     margin: 15px;
+ }
+
+ section h2 {
+     margin: 60px 0 0 0;
+ }
+
+ .section-apresentacao p {
+     justify-content: center;
+     width: 500px;
+     margin: auto;
+     margin-top: 15px;
+
+ }
+
+ .imagem img {
+      display: flex; 
+     width: 60%;
+     height: 60%;
+     margin: auto;
+     padding: 30px;
+ }
+.sessao-tabela{
     margin: 0;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-content: flex-start;
-    flex-wrap: wrap;
-
-}
-
-.logo img {
-    width: 74px;
-    height: 74px;
-}
-
-.logo h2 {
-    margin: 18px 0 0 0;
-    font-size: 20px;
-    font-family: 'Courier New', monospace;
-}
-
-
-.menu a {
-    font-size: 30px;
-   
-    
-}
-
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin: 0 15px 0 0;
-    align-items: center;
-}
-
-.menu li {
-    margin: 0 0 0 25px;
-
-}
-
-.main{
-    
-    margin: 20px 40px 0 40px;
-    align-items: center;
-    text-align: center; 
-    /* background-color: rgb(240, 245, 245); */
- } 
-
- .apresentacao{
- display: flex;
-}
-.apresentacao img{
-    width: 250px;
+    background-image: url(../images/background-da-tabela.jpg);
+    background-size: cover;
     height: 250px;
     
 }
+ .tabela {
+     text-align: center;
+     margin: auto;
+     max-width: 100%;
+     padding-top:70px;
 
-.ficha{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
     
-}
-.ficha p{
-    margin: 0 0 15px 15px;
-    font-style: italic;
-    color: rgb(126, 126, 138); 
-    font-family: Arial, Helvetica, sans-serif;  
-}
-section{
-    margin: 25px 0 0 0;
-}
-section p{
-    margin: 15px;
-}
-section h2{
-    margin: 60px 0 0 0;
-}
-.section-apresentacao p{
-justify-content: center;
-width: 500px;
-margin: auto;
-margin-top: 15px;
+     
 
+ }
+
+ .tabela th {
+     background-color: #bb86fc;
+     color: white;
+ }
+
+ .tabela td {
+     background-color: #424250;
+     color: white;
+ }
+
+ @media(max-width:500px) {
+      .logo{
+        flex-direction: column;
+      }
+      .logo img{
+        margin: auto;
+      }
+     .logo h2 {
+         margin-top: 0px;
+         font-size: 15px;
+     }
+    .menu ul{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+     .menu a {
+         font-size: 25px;
+         margin:0 10px 25px 0 ;
+         color: rgba(255, 255, 255, 0.8);
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         border-bottom: solid rgba(255, 255, 255, 0.8) 1px;
+         
+     }
+ }
+ @media(max-width:375px){
+    .cabecalho{
+        height:150px ;
+        display: block;
+        position: relative
+
+    }
+    .logo{
+        margin:0 80px 0 80px ;
+    }
+    .menu ul{
+     display: flex;
+        max-height: 100%;
+     margin: 0 80px 0 80px;
+     
+    }
+    .menu a{
+      font-size: 20px;
+      justify-content: center;
+      
+    }
+ }
+ 
+ @media(max-width: 768px){
+.menu ul{
+    display: block;
 }
-.imagem img{
+ }
+ @media(max-width: 325px){
+.logo{
+    margin: 0;
+    padding: 0 50px 0 50px;
+}
+.menu ul{
+height: 50px;
     display: flex;
-    width: 60%;
-    height: 60%;
-    margin:auto;
-    padding: 30px;
+flex-direction: none;
 }
-.tabela{
-text-align: center;
-margin: auto;
-
-}
-.tabela th{
-background-color:#bb86fc ;
-color:white ;
-}
-.tabela td{
-background-color:#424250 ;
-color:white ;
-} 
+.menu  a{
+    width: 30px;
+    position: relative;
+    right:40px ;
+}  
+ }
