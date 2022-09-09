@@ -137,8 +137,12 @@
      color: white;
  }
 
- @media(max-width: 325px) {
-     .logo {
+ @media(max-width: 350px) {
+    
+    * a{
+        font-size: 1px;
+    }
+    .logo {
          margin: 0;
          padding: 0 50px 0 50px;
      }
@@ -150,14 +154,17 @@
      }
 
      .menu a {
-         width: 30px;
-         position: relative;
-         right: 40px;
+        font-size: 1px;
+         
+         
      }
  }
 
- @media(max-width:375px) {
-     .cabecalho {
+ @media(max-width:399px) {
+     *{
+        font-size: 20px;
+     }
+    .cabecalho {
          height: 150px;
          display: block;
          position: relative
@@ -169,14 +176,15 @@
 
      .menu ul {
          display: flex;
-         max-height: 100%;
+         
          margin: 0 80px 0 80px;
 
      }
 
      .menu a {
-         font-size: 20px;
+         font-size: 10px;
          justify-content: center;
+         margin: 15px 0 5px 1000%;
 
      }
  }
