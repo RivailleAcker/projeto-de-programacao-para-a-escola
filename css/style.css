@@ -135,7 +135,7 @@
      color: white;
  }
 
- @media(max-width:500px) {
+ @media(max-width:610px) {
       .logo{
         flex-direction: column;
       }
@@ -149,7 +149,7 @@
     .menu ul{
         padding: 0;
         margin: 0;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
      .menu a {
          font-size: 25px;
@@ -204,3 +204,4 @@ flex-direction: none;
     right:40px ;
 }  
  }
+ /* @media(max-width: 575px) */
